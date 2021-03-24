@@ -4,7 +4,7 @@
 
 ##### Make sure to have DRS enabled to allow for creation of resource pool for the cluster
 
-source 0_ocp4_vsphere_upi_init_vars
+source 0_ocp4_vsphere_ipi_init_vars
 
 KERNEL=$(basename `ls /var/lib/tftpboot/rhcos/rhcos-${RHCOS}*-installer-kernel* | sort | tail -1`)
 INITRD=$(basename `ls /var/lib/tftpboot/rhcos/rhcos-${RHCOS}*-installer-initramfs* | sort | tail -1`)
@@ -117,8 +117,8 @@ else
   govc vm.destroy /${GOVC_DATACENTER}/vm/${CLUSTER}/${BOOTSTRAP_PREFIX}-0
   echo
   echo "# Delete the bootstrap node DNS record, including its corresponding api and api-int records once the VM has been destroyed."
-  echo "# If you are using a named service for DNS, you can set  BOOTSTRAP_DISABLE_DNS="Y" in 0_ocp4_vsphere_upi_init_vars config file and re-run script"
-  echo "# 1_ocp4_vsphere_upi_optional_update_dns.sh.  This will generate and push a new DNS config which will disable/remove the bootstrap server from DNS."
+  echo "# If you are using a named service for DNS, you can set  BOOTSTRAP_DISABLE_DNS="Y" in 0_ocp4_vsphere_ipi_init_vars config file and re-run script"
+  echo "# 1_ocp4_vsphere_ipi_optional_update_dns.sh.  This will generate and push a new DNS config which will disable/remove the bootstrap server from DNS."
   echo
 fi
 

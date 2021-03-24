@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source 0_ocp4_vsphere_upi_init_vars
+source 0_ocp4_vsphere_ipi_init_vars
 
 oc get csr --no-headers | awk '{print $1}' | xargs oc adm certificate approve
 

@@ -2,7 +2,7 @@
 
 ### THIS STEP IS ONLY REQUIRED IF YOU PLAN TO PERFORM A DISCONNECTED INSTALLATION ###
 
-source 0_ocp4_vsphere_upi_init_vars
+source 0_ocp4_vsphere_ipi_init_vars
 
 echo "${PULL_SECRET}" | jq ".auths += {\"${LOCAL_REG}\": {\"auth\": \"${SECRET}\",\"email\": \"noemail@localhost\"}}" > ${LOCAL_SECRET_JSON}
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source 0_ocp4_vsphere_upi_init_vars
+source 0_ocp4_vsphere_ipi_init_vars
 
 # Delete bootstrap VM
 govc vm.destroy /${GOVC_DATACENTER}/vm/${CLUSTER}/${BOOTSTRAP_PREFIX}-0

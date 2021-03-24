@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source 0_ocp4_vsphere_upi_init_vars
+source 0_ocp4_vsphere_ipi_init_vars
 
 if [ ! -f ${REG_CERT}/domain.crt ]; then
   echo "ERROR:  Attempting to generate install-config.yaml for a disconnected installation but no local registry cert file found (${REG_CERT}/domain.crt" >&2

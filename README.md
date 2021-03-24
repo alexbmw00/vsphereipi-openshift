@@ -1,7 +1,7 @@
-# vsphereupi-openshift
+# vsphereipi-openshift
 
 Before executing:
-- Copy 0_ocp4_vsphere_upi_init_vars.template as 0_ocp4_vsphere_upi_init_vars and adapt the configuration to your environment.
+- Copy 0_ocp4_vsphere_ipi_init_vars.template as 0_ocp4_vsphere_ipi_init_vars and adapt the configuration to your environment.
 
 To install:
 - Run each shell script in order.
